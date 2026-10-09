@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asai | Premium Properties in Lagos, Abuja &amp; Beyond</title>
+  <meta name="description" content="Asai helps you buy, sell, rent or invest in premium homes, modern apartments and land across Nigeria.">
+  <meta name="theme-color" content="#101820">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ================= SVG ICON SPRITE (referenced with <use href="#i-name">) ================= -->
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M10 20v-6h4v6"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V6"/><path d="M3 15h18v3"/><path d="M21 15v-2.5A3.5 3.5 0 0 0 17.5 9H11v6"/><circle cx="7" cy="11.5" r="1.6"/></symbol>
+  <symbol id="i-bath" viewBox="0 0 24 24"><path d="M3 12h18v2a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5v-2z"/><path d="M6 12V6.5A2.5 2.5 0 0 1 10 4.6"/><path d="m7 19-1 2m11-2 1 2"/></symbol>
+  <symbol id="i-area" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M15 9h-4.5M15 9v4.5M15 9l-6 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.5 3 8 7 9.5 4-1.5 7-5 7-9.5V6l-7-3z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9.5" r="2.4"/><path d="M17 14.5c2.4 0 4.5 1.9 4.5 4.5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/><circle cx="12" cy="15.5" r="1.2"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M5 21V4h9v17"/><path d="M14 9h5v12"/><path d="M3 21h18"/><path d="M8 8h3M8 12h3M8 16h3M16.5 13h.01M16.5 17h.01"/></symbol>
+  <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="m9 13.5-1.5 7.5 4.5-2.5 4.5 2.5L15 13.5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.3 2.8 2.8L16 9.5"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ================= HEADER / NAVIGATION ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a class="brand" href="#home" aria-label="Asai home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path d="M3 28 14 5l4.5 9"/>
+        <path d="M11 28 21 7l8 21"/>
+        <path d="M17 28l4-8 4 8"/>
+      </svg>
+      <span class="brand__name">Asai</span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link is-active" href="#home" data-section="home" aria-current="page">Home</a></li>
+        <li><a class="nav__link" href="#properties" data-section="properties">Properties</a></li>
+        <li><a class="nav__link" href="#about" data-section="about">About</a></li>
+        <li><a class="nav__link" href="#services" data-section="services">Services</a></li>
+        <li><a class="nav__link" href="#contact" data-open="contactDialog">Contact</a></li>
+        <li class="nav__cta-mobile"><button type="button" class="btn btn--gold" data-open="contactDialog">Get in Touch</button></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button type="button" class="icon-btn" id="headerSearchBtn" aria-label="Search properties">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+      </button>
+      <button type="button" class="btn btn--gold btn--sm header__cta" data-open="contactDialog">Get in Touch</button>
+      <button type="button" class="icon-btn nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <svg class="icon icon--menu" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+        <svg class="icon icon--close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= SECTION 1: HERO ================= -->
+  <section class="hero" id="home" aria-label="Find your next property">
+    <div class="hero__slides" id="heroSlides">
+      <div class="hero__slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=75" alt="Modern luxury house with glass walls and a swimming pool at dusk" width="1920" height="1080" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero__slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=75" alt="Contemporary villa with a pool and landscaped garden" width="1920" height="1080" loading="lazy" decoding="async">
+      </div>
+      <div class="hero__slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=75" alt="Luxury home with warm lighting and an outdoor terrace" width="1920" height="1080" loading="lazy" decoding="async">
+      </div>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--light">PREMIUM PROPERTIES. BETTER LIVING.</p>
+        <h1 class="hero__title">Find Your Next<br><span class="text-gold">Dream</span> Property</h1>
+        <p class="hero__text">At Asai, we help you find the perfect property — whether you're buying, selling or investing. Explore premium homes, modern apartments and high-yield investment opportunities.</p>
+
+        <!-- Property search -->
+        <form class="search" id="searchForm" role="search" aria-label="Search properties" novalidate>
+          <div class="search__field">
+            <svg class="icon search__icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>
+            <div class="search__control">
+              <label for="locationInput">Location</label>
+              <input id="locationInput" name="location" type="text" list="locationList" placeholder="e.g. Lagos, Abuja, etc." autocomplete="off" maxlength="60">
+              <datalist id="locationList">
+                <option value="Lagos"></option>
+                <option value="Lekki"></option>
+                <option value="Victoria Island"></option>
+                <option value="Ikoyi"></option>
+                <option value="Ibeju-Lekki"></option>
+                <option value="Abuja"></option>
+                <option value="Maitama"></option>
+              </datalist>
+            </div>
+            <svg class="icon search__chevron" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+          </div>
+
+          <div class="search__field">
+            <svg class="icon search__icon" aria-hidden="true" focusable="false"><use href="#i-home"/></svg>
+            <div class="search__control">
+              <label for="typeSelect">Property Type</label>
+              <select id="typeSelect" name="type">
+                <option value="all">All Types</option>
+                <option value="House">House</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Duplex">Duplex</option>
+                <option value="Land">Land</option>
+              </select>
+            </div>
+            <svg class="icon search__chevron" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+          </div>
+
+          <div class="search__field">
+            <svg class="icon search__icon" aria-hidden="true" focusable="false"><use href="#i-tag"/></svg>
+            <div class="search__control">
+              <label for="priceSelect">Price Range</label>
+              <select id="priceSelect" name="price">
+                <option value="any">Any Price</option>
+                <option value="under-50">Under ₦50 million</option>
+                <option value="50-150">₦50 million–₦150 million</option>
+                <option value="150-300">₦150 million–₦300 million</option>
+                <option value="above-300">Above ₦300 million</option>
+              </select>
+            </div>
+            <svg class="icon search__chevron" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+          </div>
+
+          <button type="submit" class="btn btn--dark search__submit">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+            <span>Search</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Carousel controls -->
+    <div class="hero__controls-wrap">
+      <div class="hero__controls" role="group" aria-label="Hero slideshow controls">
+        <div class="hero__dots">
+          <button type="button" class="hero__dot is-active" data-slide="0" aria-label="Go to slide 1" aria-current="true">01</button>
+          <button type="button" class="hero__dot" data-slide="1" aria-label="Go to slide 2">02</button>
+          <button type="button" class="hero__dot" data-slide="2" aria-label="Go to slide 3">03</button>
+        </div>
+        <div class="hero__arrows">
+          <button type="button" class="hero__arrow" id="heroPrev" aria-label="Previous slide"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-left"/></svg></button>
+          <button type="button" class="hero__arrow" id="heroNext" aria-label="Next slide"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: TRUST ================= -->
+  <section class="trust" id="services" aria-label="Why people trust Asai">
+    <div class="container">
+      <ul class="trust__list">
+        <li class="trust__item">
+          <span class="trust__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></span>
+          <div><h2 class="trust__title">Verified Listings</h2><p class="trust__text">Only genuine and trusted properties.</p></div>
+        </li>
+        <li class="trust__item">
+          <span class="trust__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg></span>
+          <div><h2 class="trust__title">Expert Guidance</h2><p class="trust__text">Get professional support at every step.</p></div>
+        </li>
+        <li class="trust__item">
+          <span class="trust__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg></span>
+          <div><h2 class="trust__title">Secure Transactions</h2><p class="trust__text">Your safety and peace of mind, always.</p></div>
+        </li>
+        <li class="trust__item">
+          <span class="trust__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-building"/></svg></span>
+          <div><h2 class="trust__title">Wide Selection</h2><p class="trust__text">From luxury homes to investment properties.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: FEATURED PROPERTIES ================= -->
+  <section class="properties" id="properties" aria-labelledby="propertiesHeading">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow eyebrow--gold">FEATURED PROPERTIES</p>
+          <h2 class="section-title" id="propertiesHeading">Handpicked Properties<br>Just for You</h2>
+        </div>
+        <button type="button" class="link-arrow" id="viewAllBtn">
+          <span id="viewAllLabel">View All Properties</span>
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+        </button>
+      </div>
+
+      <div class="results-bar" id="resultsBar" hidden>
+        <p class="results-bar__text" id="resultsText"></p>
+        <button type="button" class="text-btn" data-action="reset">Clear filters</button>
+      </div>
+
+      <div class="property-grid" id="propertyGrid">
+        <noscript><p class="empty-note">Enable JavaScript to browse the property listings.</p></noscript>
+      </div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <svg class="icon empty-state__icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+        <h3 class="empty-state__title">No properties match your search</h3>
+        <p class="empty-state__text">Try a different location, property type or price range.</p>
+        <button type="button" class="btn btn--dark" data-action="reset">Reset filters</button>
+      </div>
+
+      <p class="sr-only" id="liveStatus" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: WHY CHOOSE ASAI ================= -->
+  <section class="why" id="about" aria-labelledby="whyHeading">
+    <div class="container why__grid">
+      <div class="why__intro">
+        <p class="eyebrow eyebrow--light-gold">WHY CHOOSE ASAI</p>
+        <h2 class="why__title" id="whyHeading">More Than Properties,<br>We Build Futures.</h2>
+        <p class="why__text">At Asai, we're not just about real estate — we're about people, progress and long-term value. Whether you're a first-time buyer, seasoned investor, or looking for the perfect place to call home, we're here to make your journey simple, secure and successful.</p>
+        <button type="button" class="btn btn--gold" data-open="aboutDialog">
+          <span>Learn More</span>
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+        </button>
+      </div>
+
+      <ul class="why__stats" aria-label="Asai in numbers">
+        <li class="stat">
+          <svg class="icon stat__icon" aria-hidden="true" focusable="false"><use href="#i-home"/></svg>
+          <div><strong class="stat__value">500+</strong><span class="stat__label">Properties Listed</span></div>
+        </li>
+        <li class="stat">
+          <svg class="icon stat__icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg>
+          <div><strong class="stat__value">300+</strong><span class="stat__label">Happy Clients</span></div>
+        </li>
+        <li class="stat">
+          <svg class="icon stat__icon" aria-hidden="true" focusable="false"><use href="#i-medal"/></svg>
+          <div><strong class="stat__value">5+</strong><span class="stat__label">Years of Experience</span></div>
+        </li>
+        <li class="stat">
+          <svg class="icon stat__icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>
+          <div><strong class="stat__value">4</strong><span class="stat__label">Major Locations</span></div>
+        </li>
+      </ul>
+
+      <div class="why__story">
+        <button type="button" class="story-card" data-open="storyDialog" aria-haspopup="dialog">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=75" alt="Elegant modern living room with large windows" width="900" height="560" loading="lazy" decoding="async">
+          <span class="story-card__shade" aria-hidden="true"></span>
+          <span class="story-card__play" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-play"/></svg></span>
+          <span class="story-card__label">Watch Our Story</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: FINAL CTA ================= -->
+  <section class="cta" aria-labelledby="ctaHeading">
+    <div class="container">
+      <div class="cta__panel">
+        <svg class="icon cta__icon" aria-hidden="true" focusable="false"><use href="#i-home"/></svg>
+        <div class="cta__text">
+          <h2 class="cta__title" id="ctaHeading">Ready to find your dream property?</h2>
+          <p>Let's help you make the right move.</p>
+        </div>
+        <button type="button" class="btn btn--gold" data-open="contactDialog">
+          <span>Contact Us</span>
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= SECTION 6: FOOTER ================= -->
+<footer class="site-footer" id="contact">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="brand" href="#home" aria-label="Asai home">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M3 28 14 5l4.5 9"/><path d="M11 28 21 7l8 21"/><path d="M17 28l4-8 4 8"/>
+        </svg>
+        <span class="brand__name">Asai</span>
+      </a>
+      <p>Premium homes, apartments, land and investment properties, with clear guidance from first search to final handover.</p>
+    </div>
+
+    <nav aria-label="Quick links">
+      <h2 class="footer__heading">Quick Links</h2>
+      <ul class="footer__list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact" data-open="contactDialog">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Property categories">
+      <h2 class="footer__heading">Property Types</h2>
+      <ul class="footer__list">
+        <li><a href="#properties" data-filter-type="House">Houses</a></li>
+        <li><a href="#properties" data-filter-type="Apartment">Apartments</a></li>
+        <li><a href="#properties" data-filter-type="Duplex">Duplexes</a></li>
+        <li><a href="#properties" data-filter-type="Land">Land</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <h2 class="footer__heading">Contact</h2>
+      <ul class="footer__list footer__list--plain">
+        <li>Office address: <span class="placeholder">[Add office address]</span></li>
+        <li>Phone: <span class="placeholder">[Add phone number]</span></li>
+        <li>Email: <span class="placeholder">[Add email address]</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; <span id="year">2026</span> Asai. All rights reserved.</p>
+    <p class="footer__note">Property listings shown are demonstration content.</p>
+  </div>
+</footer>
+
+<!-- ================= DIALOGS ================= -->
+
+<!-- Property details -->
+<dialog class="modal modal--property" id="propertyDialog" aria-labelledby="pdTitle">
+  <button type="button" class="modal__close" data-close aria-label="Close property details">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+  </button>
+  <div class="pd">
+    <div class="pd__media">
+      <img id="pdImage" src="" alt="" width="900" height="700">
+      <span class="badge" id="pdStatus"></span>
+    </div>
+    <div class="pd__body">
+      <p class="pd__type" id="pdType"></p>
+      <h2 class="pd__title" id="pdTitle"></h2>
+      <p class="pd__location"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span id="pdLocation"></span></p>
+      <p class="pd__price" id="pdPrice"></p>
+      <ul class="pd__features" id="pdFeatures"></ul>
+      <p class="pd__desc" id="pdDesc"></p>
+      <div class="pd__actions">
+        <button type="button" class="btn btn--gold" id="pdEnquire">Enquire about this property</button>
+        <button type="button" class="btn btn--outline" data-close>Close</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- Brand story (placeholder, no real video yet) -->
+<dialog class="modal modal--story" id="storyDialog" aria-labelledby="storyTitle">
+  <button type="button" class="modal__close" data-close aria-label="Close story">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+  </button>
+  <!-- To use a real video later, replace .story__placeholder with:
+       <video controls preload="none" poster="..."><source src="assets/story.mp4" type="video/mp4"></video> -->
+  <div class="story__placeholder">
+    <p class="story__badge">Video placeholder: no video is playing</p>
+    <h2 class="story__title" id="storyTitle">Our Story</h2>
+    <p>Asai was built around a simple idea: finding a property should feel clear, safe and well supported. Our brand film is not available yet. This panel will be replaced with the video once it is ready.</p>
+    <button type="button" class="btn btn--gold" data-close>Close</button>
+  </div>
+</dialog>
+
+<!-- About / Learn more -->
+<dialog class="modal modal--info" id="aboutDialog" aria-labelledby="aboutTitle">
+  <button type="button" class="modal__close" data-close aria-label="Close about Asai">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+  </button>
+  <div class="info">
+    <h2 class="info__title" id="aboutTitle">About Asai</h2>
+    <p>Asai connects buyers, renters, sellers and investors with premium homes, apartments and land. We focus on three things:</p>
+    <ul class="info__list">
+      <li><strong>Verified listings.</strong> Properties are checked before they are shown.</li>
+      <li><strong>Expert guidance.</strong> A dedicated adviser supports you at every step.</li>
+      <li><strong>Secure transactions.</strong> Clear processes that protect your investment.</li>
+    </ul>
+    <p class="info__note">Placeholder copy: replace with Asai's real company details.</p>
+    <button type="button" class="btn btn--gold" data-open="contactDialog">Talk to us</button>
+  </div>
+</dialog>
+
+<!-- Contact form (demonstration only: no backend) -->
+<dialog class="modal modal--contact" id="contactDialog" aria-labelledby="contactTitle">
+  <button type="button" class="modal__close" data-close aria-label="Close contact form">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+  </button>
+  <div class="contact">
+    <h2 class="contact__title" id="contactTitle">Get in Touch</h2>
+    <p class="contact__intro">Tell us what you're looking for. This is a demonstration form: nothing is sent or stored.</p>
+
+    <div class="form-success" id="formSuccess" role="status" tabindex="-1" hidden>
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>
+      <p id="formSuccessText"></p>
+    </div>
+
+    <form id="contactForm" novalidate>
+      <div class="field">
+        <label for="cfName">Full name <span aria-hidden="true">*</span></label>
+        <input id="cfName" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="cfNameErr">
+        <p class="field__error" id="cfNameErr" data-error-for="cfName"></p>
+      </div>
+      <div class="field">
+        <label for="cfEmail">Email address <span aria-hidden="true">*</span></label>
+        <input id="cfEmail" name="email" type="email" autocomplete="email" required maxlength="120" aria-describedby="cfEmailErr">
+        <p class="field__error" id="cfEmailErr" data-error-for="cfEmail"></p>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="cfPhone">Phone number <span class="optional">(optional)</span></label>
+          <input id="cfPhone" name="phone" type="tel" autocomplete="tel" maxlength="20" aria-describedby="cfPhoneErr">
+          <p class="field__error" id="cfPhoneErr" data-error-for="cfPhone"></p>
+        </div>
+        <div class="field">
+          <label for="cfType">Inquiry type <span aria-hidden="true">*</span></label>
+          <select id="cfType" name="inquiry" required aria-describedby="cfTypeErr">
+            <option value="">Select an option</option>
+            <option>Buying a property</option>
+            <option>Renting a property</option>
+            <option>Selling a property</option>
+            <option>Investment opportunities</option>
+            <option>Something else</option>
+          </select>
+          <p class="field__error" id="cfTypeErr" data-error-for="cfType"></p>
+        </div>
+      </div>
+      <div class="field">
+        <label for="cfMessage">Message <span aria-hidden="true">*</span></label>
+        <textarea id="cfMessage" name="message" rows="4" required minlength="10" maxlength="1000" aria-describedby="cfMessageErr"></textarea>
+        <p class="field__error" id="cfMessageErr" data-error-for="cfMessage"></p>
+      </div>
+      <button type="submit" class="btn btn--dark btn--block">Send enquiry</button>
+    </form>
+  </div>
+</dialog>
+
+</body>
+</html>
