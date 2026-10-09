@@ -45,7 +45,10 @@ export default function ChatbotWidget({ websiteId }: ChatbotWidgetProps) {
   const [threadId, setThreadId] = useState<string | null>(null)
 
   const toggleChat = () => setIsOpen(!isOpen)
-
+  const websocketBaseUrl = import.meta.env.VITE_WS_URL
+   if (!websocketBaseUrl) {
+     throw new Error('VITE_WS_URL is not configured')
+   }
   useEffect(() => {
     // Initialize threadId from localStorage or generate a new one
     const storedThreadId = localStorage.getItem('threadId')
@@ -67,9 +70,12 @@ export default function ChatbotWidget({ websiteId }: ChatbotWidgetProps) {
     let shouldReconnect = true
 
     const connectWebSocket = () => {
+      // const newSocket = new WebSocket(
+      //   `ws://127.0.0.1:8000/ws/${websiteId}/${threadId}`,
+      // )
       const newSocket = new WebSocket(
-        `ws://127.0.0.1:8000/ws/${websiteId}/${threadId}`,
-      )
+     `${websocketBaseUrl.replace(/\/$/, '')}/ws/${websiteId}/${threadId}`,
+   )
       socketRef.current = newSocket
 
       newSocket.onopen = () => {
