@@ -12,6 +12,34 @@
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+  #realtor-chat-frame {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 2147483000;
+    width: 420px;
+    height: 700px;
+    border: 0;
+    background: transparent;
+  }
+
+  @media (max-width: 480px) {
+    #realtor-chat-frame {
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100dvh;
+    }
+  }
+</style>
+
+<iframe
+  id="realtor-chat-frame"
+  src="https://real-estate-agent-topaz-mu.vercel.app/"
+  title="Real estate chat assistant"
+  loading="lazy"
+></iframe>
   <script src="script.js" defer></script>
 </head>
 <body>
